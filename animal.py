@@ -1,7 +1,7 @@
 class Animal():
-    def init(self, type, size, age , name) : 
+    def init(self) : 
         self.type = ""
-        self.size = 0
+        self.size = ""
         self.age = 0
         self.name = ""
 
