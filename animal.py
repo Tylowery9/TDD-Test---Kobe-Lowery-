@@ -15,17 +15,38 @@ class Animal():
 #WORK ON THIS
     def speak(self):
         #if is cat
-        if self.type == cat:
-            print("MEOW")
+        if self.type =="cat":
+            if self.size =="small":
+                return "meow"
+
+            else: 
+                return "MEOW!"
+
+        
+        if self.type =="dog":
             if self.size == "small":
-                print("meow")
+                return "bow wow"
+            
+            elif self.size =="medium":
+                return "Ruff ruff"
+            
+            else:
+                return"arf arf"
             #if is small
-            if self.size == "small":
-                print("meow") 
                 #return meow
-            return self.speak(self)
+
+        #I THINK THE PROBLEM IS HERE BECAUSE IT DOESN"T RETURN THE VALUE CORRECTLY
+        
+            
         #elif is ....
-        pass
     
     def describe(self):
-        pass
+        if self.age < 10:
+            return f"{self.name} is young"
+        
+        elif self.age >= 10:
+            return f"{self.name} is old"
+
+        #I think the issue is here because it is stuck in a repeating loop
+        
+                
